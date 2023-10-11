@@ -97,7 +97,11 @@ Step14. click on debug and simulate using simulation as shown below
 
 ## STM 32 CUBE PROGRAM :
 
-
+`
+  HAL_TIM_Base_Start(&htim2);
+  HAL_TIM_PWM_Init(&htim2);
+  HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
+`
 
 
 
@@ -105,16 +109,16 @@ Step14. click on debug and simulate using simulation as shown below
 
 ### FOR PULSE AT 200:
 
-![image](https://github.com/shalini-venkatesan/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118720291/b17c288c-034c-4478-acb1-a4202ffa3e01)
+![image](https://github.com/shalini-venkatesan/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118720291/d0214aa1-59c4-4370-9220-b853a8731fad)
 
 
 ### FOR PULSE AT 500:
 
-![image](https://github.com/shalini-venkatesan/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118720291/3c58f1a5-e7a7-4adb-b0a6-36cf23b7dbac)
+![image](https://github.com/shalini-venkatesan/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118720291/d7344ae3-5292-4cb8-bcd2-12aef71cffce)
 
 ### FOR PULSE AT 800:
 
-![image](https://github.com/shalini-venkatesan/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118720291/ba780f12-3679-42c9-b092-7338d1f180a7)
+![image](https://github.com/shalini-venkatesan/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118720291/ff7e7af5-16e7-4348-bca4-572ceb46670c)
 
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
@@ -125,27 +129,26 @@ Step14. click on debug and simulate using simulation as shown below
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
 ### FOR PULSE AT 200
-
-TON = 1.2 * 20 = 24ms
-TOFF= 5 * 20 = 100ms
-TOTAL TIME = TON + TOFF = 24 + 100 = 124ms
-DUTY % = (TON / TON + TOFF)*100 = 24/124 = 
-FREQUENCY = 1/(TOTAL TIME) = 1/124 = 0.008
-
+```
+TON = 2.5 * 10 = 25ms
+TOFF= 10 * 10 = 100ms
+TOTAL TIME = TON + TOFF = 25 + 100 = 125ms
+FREQUENCY = 1/(TOTAL TIME) = 1/125 = 0.0080Hz
+```
 ### FOR PULSE AT 500
-
-TON =  3 * 20 = 60ms
-TOFF= 3* 20 = 60ms
-TOTAL TIME = TON + TOFF = 60 + 60 = 120ms
-FREQUENCY = 1/(TOTAL TIME) = 1/120 = 0.008
-
+```
+TON = 6.5 * 10 = 65ms
+TOFF= 6.2 * 10 = 62ms
+TOTAL TIME = TON + TOFF = 65 + 62 = 127ms
+FREQUENCY = 1/(TOTAL TIME) = 1/127 = 0.0078Hz
+```
 ### FOR PULSE AT 800
-
-TON = 5 * 20 = 100ms
-TOFF= 1.3 * 20 = 26ms
-TOTAL TIME = TON + TOFF = 100 + 26 = 126ms
-FREQUENCY = 1/(TOTAL TIME) = 1/126 = 0.007
-
+`
+TON = 10 * 10 = 100ms
+TOFF= 2.9 * 10 = 25ms
+TOTAL TIME = TON + TOFF = 100 + 29 = 129ms
+FREQUENCY = 1/(TOTAL TIME) = 1/129 = 0.0077Hz
+`
 
 
 ## Result :
