@@ -102,33 +102,50 @@ Step14. click on debug and simulate using simulation as shown below
 
 
 ## Output screen shots of proteus  :
- 
+
+### FOR PULSE AT 200:
+
+![image](https://github.com/shalini-venkatesan/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118720291/b17c288c-034c-4478-acb1-a4202ffa3e01)
+
+
+### FOR PULSE AT 500:
+
+![image](https://github.com/shalini-venkatesan/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118720291/3c58f1a5-e7a7-4adb-b0a6-36cf23b7dbac)
+
+### FOR PULSE AT 800:
+
+![image](https://github.com/shalini-venkatesan/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118720291/ba780f12-3679-42c9-b092-7338d1f180a7)
+
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
+
+ ![image](https://github.com/shalini-venkatesan/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118720291/58d6c8ce-d043-4b24-a637-2de2e7aa3265)
+
  
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
-FOR PULSE AT 500
+### FOR PULSE AT 200
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+TON = 1.2 * 20 = 24ms
+TOFF= 5 * 20 = 100ms
+TOTAL TIME = TON + TOFF = 24 + 100 = 124ms
+DUTY % = (TON / TON + TOFF)*100 = 24/124 = 
+FREQUENCY = 1/(TOTAL TIME) = 1/124 = 0.008
 
-FOR PULSE AT 700
+### FOR PULSE AT 500
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+TON =  3 * 20 = 60ms
+TOFF= 3* 20 = 60ms
+TOTAL TIME = TON + TOFF = 60 + 60 = 120ms
+FREQUENCY = 1/(TOTAL TIME) = 1/120 = 0.008
 
+### FOR PULSE AT 800
 
-FOR PULSE AT 900
+TON = 5 * 20 = 100ms
+TOFF= 1.3 * 20 = 26ms
+TOTAL TIME = TON + TOFF = 100 + 26 = 126ms
+FREQUENCY = 1/(TOTAL TIME) = 1/126 = 0.007
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
 
 
 ## Result :
