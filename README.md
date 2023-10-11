@@ -97,11 +97,11 @@ Step14. click on debug and simulate using simulation as shown below
 
 ## STM 32 CUBE PROGRAM :
 
-`
+```
   HAL_TIM_Base_Start(&htim2);
   HAL_TIM_PWM_Init(&htim2);
   HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
-`
+```
 
 
 
@@ -143,12 +143,12 @@ TOTAL TIME = TON + TOFF = 65 + 62 = 127ms
 FREQUENCY = 1/(TOTAL TIME) = 1/127 = 0.0078Hz
 ```
 ### FOR PULSE AT 800
-`
+```
 TON = 10 * 10 = 100ms
 TOFF= 2.9 * 10 = 25ms
 TOTAL TIME = TON + TOFF = 100 + 29 = 129ms
 FREQUENCY = 1/(TOTAL TIME) = 1/129 = 0.0077Hz
-`
+```
 
 
 ## Result :
